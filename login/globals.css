@@ -6,11 +6,19 @@
   box-sizing: border-box;
 }
 
-html,
-body {
+html, body {
   margin: 0;
+  padding: 0;
   height: 100%;
+}
+
+body {
   font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Ensure the body takes up the full viewport */
+  min-height: 100vh;
 }
 
 button:focus-visible {
