@@ -256,6 +256,7 @@ body {
 
 .banner-container {
     max-width: 100%;
+    height: 360px;
     margin: 20px 30px; /* Same margins as the navbar */
     padding: 0;
     box-sizing: border-box;
