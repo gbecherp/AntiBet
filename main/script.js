@@ -32,7 +32,7 @@ document.querySelector('.bet-slip-close').addEventListener('click', function() {
 
 // Read More Button
 document.querySelector('.read-more-button').addEventListener('click', function() {
-    alert('Read more about the Champion League!');
+    alert('hello');
 });
 
 // Odds Buttons
