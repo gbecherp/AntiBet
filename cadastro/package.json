@@ -1,0 +1,24 @@
+{
+  "name": "register-form-project",
+  "version": "1.0.0",
+  "description": "A simple and responsive register form.",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "clean": "rm -rf node_modules && npm cache clean --force"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0",
+    "live-server": "^1.2.1"
+  },
+  "author": "Seu Nome",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/register-form-project.git"
+  }
+}

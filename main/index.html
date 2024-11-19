@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AntiBet - Pare de apostar!</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kanit:ital,wght@1,900&family=Karla:wght@400;700&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <!-- Meta viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="navbar-logo">ANTIBET</div>
+            <nav class="navbar-links">
+                <a href="#">Fórum</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+                <a href="#">Depoimentos</a>
+            </nav>
+            <button class="deposit-button">Pedir ajuda</button>
+            <div class="user-info">
+                <div class="username">Usuário</div>
+                <div class="balance">1504 XP</div>
+                <img src="./../assets/user-avatar.png" alt="User Avatar" class="user-avatar">
+            </div>
+        </header>
+
+        <!-- Professionals Section -->
+        <section class="categories">
+            <h1 class="section-title">Rede de profissionais habilitados</h1>
+            <!-- Repeat professionals as categories -->
+            <div class="category">
+                <img src="https://via.placeholder.com/50x50" alt="Dra. Melanie Klein">
+                <span>Dra. Melanie Klein, Psicóloga</span>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/50x50" alt="Dr. Sigmund Freud">
+                <span>Dr. Sigmund Freud, Psicanalista</span>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/50x50" alt="MSc. Carl Jung">
+                <span>MSc. Carl Jung, Psiquiatra</span>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/50x50" alt="Dra. Nise da Silveira">
+                <span>Dra. Nise da Silveira, Psiquiatra</span>
+            </div>
+            <div class="category">
+                <img src="https://via.placeholder.com/50x50" alt="Dr. Vigotski">
+                <span>Dr. Vigotski, Neuropsicólogo</span>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-container">
+                <img src="./../assets/13642.webp" alt="Banner Image" class="banner-image">
+                <div class="banner-content">
+                    <h1>Conte-nos a sua história!</h1>
+                    <p>Acesse o nosso fórum e seja apoiado por pessoas dispostas a lhe ajudar!</p>
+                    <button class="read-more-button">ACESSAR FÓRUM</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Forum Section -->
+        <section class="forum-section">
+            <h2>Fórum ANTIBET</h2>
+            <p>Apoie e seja apoiado por pessoas dispostas a ajudar.</p>
+            <a href="/forum" class="forum-link">Visite o fórum</a>
+        </section>
+
+        <!-- Content Container -->
+        <div class="content-container">
+            <!-- Matches Section -->
+            <section class="matches-section">
+                <!-- Existing content -->
+                <div class="matches-header">
+                    <div class="tab live-matches-tab active">Top Live-matches</div>
+                    <div class="tab pre-matches-tab">Top Pre-matches</div>
+                </div>
+                <!-- Match Cards -->
+                <div class="match-card">
+                    <div class="teams-info">
+                        <div class="team">
+                            <img src="https://via.placeholder.com/64x64" alt="Chelsea Logo">
+                            <span>Chelsea</span>
+                        </div>
+                        <div class="match-score">
+                            <span>0 : 0</span>
+                            <span>15h 30m</span>
+                        </div>
+                        <div class="team">
+                            <img src="https://via.placeholder.com/64x64" alt="Liverpool Logo">
+                            <span>Liverpool</span>
+                        </div>
+                    </div>
+                    <div class="odds-info">
+                        <div class="league">Premier League</div>
+                        <div class="bet-type">1X2</div>
+                        <div class="odds">
+                            <button class="odd-button">
+                                <span>1</span>
+                                <span>0.89</span>
+                            </button>
+                            <button class="odd-button">
+                                <span>X</span>
+                                <span>0.89</span>
+                            </button>
+                            <button class="odd-button">
+                                <span>2</span>
+                                <span>0.89</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat match cards as needed -->
+            </section>
+
+            <!-- Bet Slip -->
+            <aside class="bet-slip">
+                <!-- Existing content -->
+                <div class="bet-slip-header">
+                    <span class="bet-slip-title">Bet Slip</span>
+                    <span class="bet-slip-close">X</span>
+                </div>
+                <hr class="divider">
+                <!-- Bet Items -->
+                <div class="bet-item">
+                    <div class="bet-item-league">Premier League</div>
+                    <div class="bet-item-teams">
+                        <div class="team">
+                            <img src="https://via.placeholder.com/32x32" alt="Chelsea Logo">
+                            <span>Chelsea</span>
+                        </div>
+                        <div class="team">
+                            <img src="https://via.placeholder.com/32x32" alt="Liverpool Logo">
+                            <span>Liverpool</span>
+                        </div>
+                    </div>
+                    <div class="bet-item-odds">
+                        <span>1X2 : Liverpool</span>
+                        <span>0.89</span>
+                    </div>
+                </div>
+                <!-- Repeat bet items as needed -->
+                <hr class="divider">
+                <!-- Bet Summary -->
+                <div class="bet-summary">
+                    <div><span>Overall odd</span><span>1.79</span></div>
+                    <div><span>Stake (MMK)</span><span>150230 MMK</span></div>
+                    <div><span>Balance (MMK)</span><span>1500 MMK</span></div>
+                    <div><span>Potential Winnings</span><span>50586 MMK</span></div>
+                </div>
+                <!-- Place Bet Button -->
+                <button class="place-bet-button">Place Bet</button>
+            </aside>
+        </div> <!-- End of Content Container -->
+
+    </div> <!-- End of Main Container -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
