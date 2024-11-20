@@ -30,6 +30,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000); // Auto-rotate every 5 seconds
 });
 
+// QueroAjudar script
+
+document.addEventListener("DOMContentLoaded", () => {
+    const queroAjudarButton = document.getElementById("queroAjudar");
+
+    queroAjudarButton.addEventListener("click", () => {
+        window.location.href = "./../cadastro-profissional/index.html"
+    })
+})
 
 // JavaScript for Popup
 document.addEventListener("DOMContentLoaded", () => {
