@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <main class="register-container">
+    <form class="register-form" action="/register" method="POST">
+      <h1 class="register-title">Cadastro</h1>
+
+      <!-- Campo de primeiro nome -->
+      <div class="input-group">
+        <label for="firstName">Primeiro Nome</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Insira o seu primeiro nome" required>
+      </div>
+
+      <!-- Campo de sobrenome -->
+      <div class="input-group">
+        <label for="lastName">Sobrenome</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Insira o seu sobrenome" required>
+      </div>
+
+      <!-- Campo de telefone -->
+      <div class="input-group">
+        <label for="phone">Telefone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Insira o seu telefone" required>
+      </div>
+
+      <!-- Campo de e-mail -->
+      <div class="input-group">
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Insira o seu e-mail" required>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Insira a sua senha" required>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="input-group">
+        <label for="password">Repita a sua senha</label>
+        <input type="password" id="password" name="password" placeholder="Insira a sua senha novamente" required>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Continuar logado</label>
+      </div>
+
+      <!-- Botão de register -->
+      <button type="submit" class="register-button">Cadastrar-se</button>
+    </form>
+  </main>
+</body>
+</html>

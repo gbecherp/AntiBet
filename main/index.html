@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AntiBet - Pare de apostar!</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@700&family=Kanit:ital,wght@1,900&family=Karla:wght@400;700&family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <!-- Meta viewport for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Navbar -->
+        <header class="navbar">
+            <div class="navbar-logo">ANTI<span class=bet>BET</span></div>
+            <nav class="navbar-links">
+                <a href="./../forum/index.html">Fórum</a>
+                <a href="#">Blog</a>
+                <a href="#">FAQ</a>
+                <a href="#">Depoimentos</a>
+                <a href="#">Profissionais de Saúde</a>
+            </nav>
+            <button class="deposit-button">Pedir ajuda</button>
+            <button id="queroAjudar" class="deposit-button">Quero ajudar</button>
+            <div class="user-info">
+                <div class="username">
+                    <a href="./../login/index.html">Fazer login</a></div>
+                <div class="balance">0 XP</div>
+                <img src="./../assets/user-avatar.png" alt="User Avatar" class="user-avatar">
+            </div>
+        </header>
+
+    <!-- Popup -->
+    <div id="help-popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2>Pedir Ajuda</h2>
+            <p>Preencha o formulário abaixo para entrar em contato com um de nossos profissionais.</p>
+            <form id="help-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+        <!-- Professionals Section -->
+        <section class="categories">
+            <h1 class="section-title">Rede de profissionais habilitados</h1>
+            <!-- Repeat professionals as categories -->
+            <div class="category">
+                <img src="https://relate.com.my/wp-content/uploads/2024/03/Klein-768x768.jpeg" alt="Dra. Melanie Klein">
+                <span>Dra. Melanie Klein, Psicóloga</span>
+            </div>
+            <div class="category">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Sigmund_Freud_colorized.jpg" alt="Dr. Sigmund Freud">
+                <span>Dr. Sigmund Freud, Psicanalista</span>
+            </div>
+            <div class="category">
+                <img src="https://i0.wp.com/mandala-of-love.com/wp-content/uploads/2017/04/Jung_colour.jpg" alt="MSc. Carl Jung">
+                <span>MSc. Carl Jung, Psiquiatra</span>
+            </div>
+            <div class="category">
+                <img src="https://upload.wikimedia.org/wikipedia/pt/7/71/Nise_da_Silveira.jpg" alt="Dra. Nise da Silveira">
+                <span>Dra. Nise da Silveira, Psiquiatra</span>
+            </div>
+            <div class="category">
+                <img src="https://escolaweb.educacao.al.gov.br/uploads/89bce54a-8383-44b7-b1b6-36bf7aecca92.PNG" alt="Dr. Vigotski">
+                <span>Dr. Vigotski, Neuropsicólogo</span>
+            </div>
+        </section>
+
+        <!-- Banner -->
+        <section class="banner">
+            <div class="banner-container">
+                <div class="banner-slides">
+                    <div class="slide active">
+                        <img src="./../assets/yelling.png" alt="Slide 1" class="banner-image">
+                        <div class="banner-content">
+                            <h1>Conte-nos a sua história!</h1>
+                            <p>Acesse o nosso fórum e seja apoiado por pessoas dispostas a lhe ajudar!</p>
+                            <button href="./../forum/index.html" id="acessarForum" class="read-more-button">ACESSAR FÓRUM</button>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="./../assets/angry.png" alt="Slide 2" class="banner-image">
+                        <div class="banner-content">
+                            <h1>Juntos somos mais fortes!</h1>
+                            <p>Participe do nosso fórum e encontre apoio mútuo!</p>
+                            <button class="read-more-button">ACESSAR FÓRUM</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-nav">
+                    <button class="nav-button prev-button">❮</button>
+                    <button class="nav-button next-button">❯</button>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Forum Section -->
+        <section class="forum-section">
+            <h2>Fórum ANTIBET</h2>
+            <p>Apoie e seja apoiado por pessoas dispostas a ajudar.</p>
+            <a href="./../forum/index.html" id="visiteForum" class="forum-link">Visite o fórum</a>
+        </section>
+
+    </div> <!-- End of Main Container -->
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

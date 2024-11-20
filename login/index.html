@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="globals.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background"></div>
+  <main class="login-container">
+    <form class="login-form" action="/login" method="POST">
+      <h1 class="login-title">Login</h1>
+
+      <!-- Campo de e-mail -->
+      <div class="input-group">
+        <label for="email">Endereço de e-mail</label>
+        <input type="email" id="email" name="email" placeholder="Insira o seu e-mail" required>
+      </div>
+
+      <!-- Campo de senha -->
+      <div class="input-group">
+        <label for="password">Senha</label>
+        <input type="password" id="password" name="password" placeholder="Insira a sua senha" required>
+      </div>
+
+      <!-- Checkbox -->
+      <div class="checkbox-group">
+        <input type="checkbox" id="remember" name="remember">
+        <label for="remember">Continuar logado</label>
+      </div>
+
+      <!-- Botão de Login -->
+      <button type="submit" class="login-button">Fazer login</button>
+
+      <!-- Criar uma conta -->
+       <p class="criar-conta">Ainda não possui uma conta? <a href="./../cadastro/index.html">Clique aqui para se cadastrar.</a></p>
+    </form>
+  </main>
+</body>
+</html>
