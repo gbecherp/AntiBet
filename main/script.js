@@ -1,5 +1,36 @@
 // JavaScript code for interactivity
 
+// JavaScript for banner slides
+document.addEventListener("DOMContentLoaded", () => {
+    const slides = document.querySelectorAll(".slide");
+    const prevButton = document.querySelector(".prev-button");
+    const nextButton = document.querySelector(".next-button");
+    let currentIndex = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove("active", "prev");
+            if (i === currentIndex) slide.classList.add("prev");
+        });
+
+        currentIndex = (index + slides.length) % slides.length; // Wrap around
+        slides[currentIndex].classList.add("active");
+    }
+
+    prevButton.addEventListener("click", () => {
+        showSlide(currentIndex - 1);
+    });
+
+    nextButton.addEventListener("click", () => {
+        showSlide(currentIndex + 1);
+    });
+
+    setInterval(() => {
+        showSlide(currentIndex + 1);
+    }, 5000); // Auto-rotate every 5 seconds
+});
+
+
 // JavaScript for Popup
 document.addEventListener("DOMContentLoaded", () => {
     const popup = document.getElementById("help-popup");

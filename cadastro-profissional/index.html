@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Profissional - ANTIBET</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1 id="main-title">Seja um profissional cadastrado na ANTIBET</h1>
+      <form action="#" novalidate>
+        <!-- Name -->
+        <div class="input-group">
+          <label for="full-name">Nome completo</label>
+          <input type="text" id="full-name" placeholder="Insira o seu nome completo" required aria-label="Nome completo">
+        </div>
+
+        <!-- Email -->
+        <div class="input-group">
+          <label for="email">Endereço de e-mail</label>
+          <input type="email" id="email" placeholder="Insira o seu endereço de e-mail" required aria-label="E-mail">
+        </div>
+
+        <!-- Phone -->
+        <div class="input-group">
+          <label for="phone">Número de telefone</label>
+          <div class="phone-input">
+            <select id="country-code" aria-label="Código do país">
+              <option value="+55">🇧🇷 +55</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Insira o seu telefone" required pattern="\d+" aria-label="Telefone">
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Crie uma senha" required aria-label="Senha">
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+          <label for="confirm-password">Confirme a sua senha</label>
+          <input type="password" id="confirm-password" placeholder="Repita a sua senha" required aria-label="Confirmação de senha">
+        </div>
+
+        <!-- Terms -->
+        <div class="input-group checkbox-group">
+          <input type="checkbox" id="terms" required>
+          <label for="terms" class="terms">Eu concordo com os <a href="#">Termos de serviço</a> e com a <a href="#">Política de Privacidade</a></label>
+        </div>
+
+        <!-- Buttons -->
+        <button type="submit">Criar conta</button>
+        <div class="divider">Ou</div>
+        <button type="button" class="google-button">Cadastrar-se com uma conta do Google</button>
+        <p class="login-link">Já é um profissional membro? <a href="./../login/index.html">Faça login</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
