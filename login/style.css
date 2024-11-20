@@ -88,6 +88,10 @@
   transform: scale(1.02); /* Subtle grow effect */
 }
 
+.criar-conta {
+  padding-top: 30px;
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .login-container {
