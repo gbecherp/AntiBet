@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const queroAjudarButton = document.getElementById("queroAjudar");
+    const acessarForum = document.getElementById("acessarForum");
+
+    acessarForum.addEventListener("click", () => {
+        window.location.href = "./../forum/index.html";
+    })
 
     queroAjudarButton.addEventListener("click", () => {
         window.location.href = "./../cadastro-profissional/index.html"
@@ -68,11 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
 // Toggle Bet Slip visibility
 document.querySelector('.bet-slip-close').addEventListener('click', function() {
     document.querySelector('.bet-slip').style.display = 'none';
-});
-
-// Read More Button
-document.querySelector('.read-more-button').addEventListener('click', function() {
-    alert('hello');
 });
 
 // Odds Buttons

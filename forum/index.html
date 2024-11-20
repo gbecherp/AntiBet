@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANTIBET</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Mobile Menu Toggle Button -->
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Tópicos</a></li>
+            </ul>
+        </nav>
+        <footer>
+            <button class="dark-mode" id="darkModeToggle">Modo Escuro</button>
+            <p>&copy; 2023 ANTIBET, Tous droits réservés</p>
+        </footer>
+    </aside>
+
+    <!-- Popup -->
+    <div id="help-popup" class="popup">
+        <div class="popup-content">
+            <span class="popup-close">&times;</span>
+            <h2>Pedir Ajuda</h2>
+            <p>Preencha o formulário abaixo para entrar em contato com um de nossos profissionais.</p>
+            <form id="help-form">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Escreva sua mensagem..." required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="navbar-logo">ANTI<span class=bet>BET</span></div>
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Pesquisar">
+            </div>
+            <div class="actions">
+                <button class="deposit-button" id="pedirAjudaButton">Pedir ajuda</button>
+                <button id="queroAjudar" class="deposit-button">Quero ajudar</button>
+                <div class="user-info">
+                    <div class="username">
+                        <a href="./../login/index.html">Fazer login</a>
+                    </div>
+                    <div class="balance">0 XP</div>
+                    <img src="./../assets/user-avatar.png" alt="User Avatar" class="user-avatar">
+                </div>
+            </div>
+        </header>
+
+        <!-- Moderation Rules Sidebar -->
+        <aside class="moderation-sidebar">
+            <h3>Regras de Moderação</h3>
+            <ul>
+                <li>1. Respeite todos os membros.</li>
+                <li>2. Não publique spam ou links maliciosos.</li>
+                <li>3. Evite discursos de ódio ou bullying.</li>
+                <li>4. Poste conteúdos relacionados ao tópico.</li>
+                <li>5. Denuncie atividades suspeitas.</li>
+            </ul>
+        </aside>
+
+        <!-- Post Creation Section -->
+        <section class="create-post-section">
+            <form class="create-post-form">
+                <textarea class="post-input" placeholder="Escreva algo..." rows="3"></textarea>
+                <div class="post-actions">
+                    <button type="button" class="post-submit-btn">Publicar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="featured">
+            <div class="featured-card">
+                <div class="featured-text">
+                    <p class="tag">#thread</p>
+                    <h3>Viciado em apostas - perdi 26 mil reais</h3>
+                    <p>Comecei com valores baixos e de fato comecei a ser lucrativo um tempo...</p><br>
+                    <span>Por: <a href="#">@maarcelo99</a></span>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="featured-text">
+                    <p class="tag">#thread</p>
+                    <h3>Como vocês conseguiram parar de apostar?</h3>
+                    <p>Me vejo num poço sem fundo com relação a apostas...</p><br>
+                    <span>Por: <a href="#">@impossible-baker-109</a></span>
+                </div>
+            </div>
+            <div class="featured-card">
+                <div class="featured-text">
+                    <p class="tag">#notícias</p>
+                    <h3>Faltam iniciativas em saúde pública para lidar com o vício...</h3>
+                    <p>O Ministério da Saúde do Brasil está em processo de criação de um...</p><br>
+                    <span>Por: <a href="#">@JornalDaUSP</a></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Posts Section -->
+        <section class="posts">        
+            <!-- Post Card -->
+            <article class="post">
+                <header>
+                    <img src="https://via.placeholder.com/40" alt="Author Avatar" class="author-avatar">
+                    <div class="post-info">
+                        <span class="author">t/maarcelo99</span>
+                        <span class="time">há 2h</span>
+                    </div>
+                </header>
+                <p class="post-text">Comecei com valores baixos e de fato comecei a ser lucrativo um tempo, mas a ganância me cegou Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <footer>
+                    <button class="action-btn">Ver discussão</button>
+                </footer>
+            </article>
+        
+            <!-- Another Post -->
+            <article class="post">
+                <header>
+                    <img src="https://via.placeholder.com/40" alt="Author Avatar" class="author-avatar">
+                    <div class="post-info">
+                        <span class="author">t/impossible-baker-109</span>
+                        <span class="time">há 5h</span>
+                    </div>
+                </header>
+                <p class="post-text">Me vejo num poço sem fundo com relação a apostas Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <footer>
+                    <button class="action-btn">Ver discussão</button>
+                </footer>
+            </article>
+        </section>
+        
+    </main>
+
+    <!-- Include your script.js at the end of the body -->
+    <script src="script.js"></script>
+</body>
+</html>
