@@ -1,5 +1,23 @@
 // JavaScript code for interactivity
 
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+    // Check local storage for dark mode preference
+    const isDarkMode = localStorage.getItem('dark-mode') === 'true';
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+    }
+
+    // Toggle dark mode on button click
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const darkModeEnabled = document.body.classList.contains('dark-mode');
+        localStorage.setItem('dark-mode', darkModeEnabled); // Save preference
+    });
+});
+
+
 // JavaScript for banner slides
 document.addEventListener("DOMContentLoaded", () => {
     const slides = document.querySelectorAll(".slide");
