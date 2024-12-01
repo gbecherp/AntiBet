@@ -1,4 +1,18 @@
 /* General Styles */
+:root {
+    --background-color: white;
+    --text-color: black;
+    --navbar-background: white;
+    --link-color: #121515;
+}
+
+body.dark-mode {
+    --background-color: #121212;
+    --text-color: #f1f1f1;
+    --navbar-background: #1e1e1e;
+    --link-color: #fda92a;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +20,8 @@
 body {
     margin: 0;
     font-family: 'Karla', sans-serif;
-    background-color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 .main-container {
@@ -20,7 +35,7 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: white;
+    background: var(--navbar-background);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.25);
     flex-wrap: wrap;
     margin: 20px 30px;
@@ -59,7 +74,7 @@ body {
 
 .navbar-links a {
     margin: 0 15px;
-    color: #121515;
+    color: var(--link-color);
     font-size: 22px;
     font-weight: 700;
     text-decoration: none;
@@ -68,6 +83,17 @@ body {
 
 .navbar-links a:hover {
     color: #fda92a;
+}
+
+.dark-mode-button {
+    background: var(--background-color);
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px;
 }
 
 .deposit-button {
@@ -252,7 +278,7 @@ body {
 .category {
     width: 300px;
     height: 60px;
-    background: white;
+    background: var(--background-color);
     border-radius: 30px;
     border: 2px solid black;
     display: flex;
