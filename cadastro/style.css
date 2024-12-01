@@ -7,7 +7,6 @@ body {
   align-items: center;
   height: 100vh;
   background: radial-gradient(circle, #FFD700 20%, #FF8C00 60%, #FF4500 100%);
-
 }
 
 .container {
@@ -26,14 +25,14 @@ body {
   background: #ffcc00;
   display: flex;
   justify-content: center;
-  align-items: center;;
+  align-items: center;
 }
 
 .tiger-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center; /* Centers the image within the container */
+  object-position: center;
 }
 
 .right-section {
@@ -96,7 +95,7 @@ input {
   max-width: 20%;
   max-height: 20%;
   object-fit: cover;
-  display:flex;
+  display: flex;
 }
 
 a {
