@@ -29,7 +29,7 @@
   font-weight: 700;
   margin-bottom: 30px; /* Larger gap for visual balance */
   text-align: center;
-  color: #22325b; /* Darker color for contrast */
+  color: #ff7700; /* Darker color for contrast */
 }
 
 /* Input fields */
@@ -42,7 +42,7 @@
   font-weight: 600; /* Slightly bolder for readability */
   margin-bottom: 8px; /* Balanced spacing below labels */
   display: block;
-  color: #22325b; /* Matching the title color */
+  color: #ff7700; /* Matching the title color */
 }
 
 .input-group input {
@@ -55,7 +55,7 @@
 
 .input-group input:focus {
   border-color: #4a90e2;
-  box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Subtle focus highlight */
+  box-shadow: 0 0 5px #ff7700(74, 144, 226, 0.5); /* Subtle focus highlight */
   outline: none;
 }
 
@@ -72,7 +72,7 @@
 .register-button {
   width: 100%;
   padding: 15px; /* Increased button size */
-  background-color: #4a90e2; /* Softer blue for better appeal */
+  background-color: #ff7700; /* Softer blue for better appeal */
   color: #fff;
   font-size: 18px; /* Larger font size */
   font-weight: 700;
@@ -84,7 +84,7 @@
 }
 
 .register-button:hover {
-  background-color: #3a78c0; /* Slightly darker blue on hover */
+  background-color: #ff7700; /* Slightly darker blue on hover */
   transform: scale(1.02); /* Subtle grow effect */
 }
 
