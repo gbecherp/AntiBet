@@ -1,0 +1,67 @@
+[
+    {
+        "id": "klein",
+        "name": "Dra. Melanie Klein",
+        "title": "Psicóloga",
+        "description": "Especialista em psicoterapia infantil, conhecida por suas contribuições na teoria psicanalítica do desenvolvimento infantil.",
+        "specialties": ["Psicoterapia infantil", "Psicanálise"],
+        "contact": {
+            "email": "melanie.klein@example.com",
+            "phone": "+55 11 1234-5678"
+        },
+        "image": "https://relate.com.my/wp-content/uploads/2024/03/Klein-768x768.jpeg",
+        "location": "São Paulo, SP - Brasil"
+    },
+    {
+        "id": "freud",
+        "name": "Dr. Sigmund Freud",
+        "title": "Psicanalista",
+        "description": "Pai da psicanálise, desenvolvedor das teorias sobre o inconsciente, sonhos e os mecanismos de defesa.",
+        "specialties": ["Psicanálise", "Teoria do inconsciente"],
+        "contact": {
+            "email": "sigmund.freud@example.com",
+            "phone": "+55 21 9876-5432"
+        },
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Sigmund_Freud_colorized.jpg",
+        "location": "Rio de Janeiro, RJ - Brasil"
+    },
+    {
+        "id": "jung",
+        "name": "MSc. Carl Jung",
+        "title": "Psiquiatra",
+        "description": "Fundador da psicologia analítica, com contribuições sobre os arquétipos e o inconsciente coletivo.",
+        "specialties": ["Psicologia analítica", "Arquétipos"],
+        "contact": {
+            "email": "carl.jung@example.com",
+            "phone": "+55 31 5678-4321"
+        },
+        "image": "https://i0.wp.com/mandala-of-love.com/wp-content/uploads/2017/04/Jung_colour.jpg",
+        "location": "Belo Horizonte, MG - Brasil"
+    },
+    {
+        "id": "nise",
+        "name": "Dra. Nise da Silveira",
+        "title": "Psiquiatra",
+        "description": "Reconhecida por seu trabalho pioneiro na terapia ocupacional e no uso da arte para o tratamento de transtornos mentais.",
+        "specialties": ["Terapia ocupacional", "Terapia com arte"],
+        "contact": {
+            "email": "nise.silveira@example.com",
+            "phone": "+55 85 5555-6789"
+        },
+        "image": "https://upload.wikimedia.org/wikipedia/pt/7/71/Nise_da_Silveira.jpg",
+        "location": "Fortaleza, CE - Brasil"
+    },
+    {
+        "id": "vygotsky",
+        "name": "Dr. Lev Vygotsky",
+        "title": "Neuropsicólogo",
+        "description": "Autor de teorias importantes sobre o desenvolvimento cognitivo e a mediação cultural.",
+        "specialties": ["Desenvolvimento cognitivo", "Educação mediada"],
+        "contact": {
+            "email": "lev.vygotsky@example.com",
+            "phone": "+55 62 6789-1234"
+        },
+        "image": "https://nova-escola-producao.s3.amazonaws.com/bEfDZ4fKF4EzWjTxYmCfnAQj65PpJ7hSXxgTaVrJRyGwg4tK6W2ScKdxX2yM/lev-vygotsky.jpg",
+        "location": "Goiânia, GO - Brasil"
+    }
+]

@@ -16,6 +16,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.addEventListener('DOMContentLoaded', () => {
+    const categoriesContainer = document.querySelector('.categories');
+
+    fetch('./profissionais.json')
+        .then(response => response.json())
+        .then(data => {
+            data.forEach(professional => {
+                // Criar elemento para cada profissional
+                const category = document.createElement('div');
+                category.classList.add('category');
+                category.dataset.id = professional.id;
+
+                category.innerHTML = `
+                    <img src="${professional.image}" alt="${professional.name}">
+                    <span>${professional.name}, ${professional.title}</span>
+                `;
+
+                // Adicionar evento de clique
+                category.addEventListener('click', () => {
+                    showModal(professional);
+                });
+
+                categoriesContainer.appendChild(category);
+            });
+        })
+        .catch(error => console.error('Erro ao carregar os profissionais:', error));
+});
+
+function showModal(professional) {
+    const modal = document.querySelector('.modal');
+    const modalOverlay = document.querySelector('.modal-overlay');
+
+    // Atualizar conteúdo do modal
+    modal.innerHTML = `
+        <h2>${professional.name}</h2>
+        <h3>${professional.title}</h3>
+        <p>${professional.description}</p>
+        <p><strong>Especialidades:</strong> ${professional.specialties.join(', ')}</p>
+        <p><strong>Contato:</strong> ${professional.contact.email} | ${professional.contact.phone}</p>
+        <p><strong>Localização:</strong> ${professional.location}</p>
+        <button class="close-modal">Fechar</button>
+    `;
+
+    // Exibir modal e overlay
+    modal.classList.add('visible');
+    modalOverlay.classList.add('visible');
+
+    // Fechar modal ao clicar no botão
+    modal.querySelector('.close-modal').addEventListener('click', closeModal);
+    modalOverlay.addEventListener('click', closeModal);
+}
+
+function closeModal() {
+    const modal = document.querySelector('.modal');
+    const modalOverlay = document.querySelector('.modal-overlay');
+
+    modal.classList.remove('visible');
+    modalOverlay.classList.remove('visible');
+}
+
+
 
 // JavaScript for banner slides
 document.addEventListener("DOMContentLoaded", () => {
@@ -88,11 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-// Toggle Bet Slip visibility
-document.querySelector('.bet-slip-close').addEventListener('click', function() {
-    document.querySelector('.bet-slip').style.display = 'none';
-});
 
 // Odds Buttons
 const oddsButtons = document.querySelectorAll('.odd-button');
