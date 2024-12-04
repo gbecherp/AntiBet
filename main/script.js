@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-    // Check local storage for dark mode preference
+    // Check localStorage for dark mode preference
     const isDarkMode = localStorage.getItem('dark-mode') === 'true';
     if (isDarkMode) {
         document.body.classList.add('dark-mode');
@@ -11,9 +11,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Toggle dark mode on button click
     darkModeToggle.addEventListener('click', () => {
-        document.body.classList.toggle('dark-mode');
-        const darkModeEnabled = document.body.classList.contains('dark-mode');
-        localStorage.setItem('dark-mode', darkModeEnabled); // Save preference
+        const isDarkEnabled = document.body.classList.toggle('dark-mode');
+        localStorage.setItem('dark-mode', isDarkEnabled); // Save preference
     });
 });
 
@@ -52,16 +51,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const queroAjudarButton = document.getElementById("queroAjudar");
-    const acessarForum = document.getElementById("acessarForum");
+    const botaoForum = document.getElementsByClassName("botaoForum");
 
-    acessarForum.addEventListener("click", () => {
-        window.location.href = "./../forum/index.html";
-    })
+    Array.from(botaoForum).forEach(button => {
+        button.addEventListener("click", () => {
+            window.location.href = "./../forum/index.html";
+        });
+    });
 
     queroAjudarButton.addEventListener("click", () => {
-        window.location.href = "./../cadastro-profissional/index.html"
-    })
-})
+        window.location.href = "./../cadastro-profissional/index.html";
+    });
+});
 
 // JavaScript for Popup
 document.addEventListener("DOMContentLoaded", () => {
