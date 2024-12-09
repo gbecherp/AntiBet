@@ -1,32 +1,48 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const tigerImage = document.querySelector('.tiger-image');
-  
-    // Define the animation steps
-    const animationSteps = [
-      { scale: 1.2, x: '75%', y: '0%' },  // Top-right
-      { scale: 1.2, x: '75%', y: '75%' }, // Bottom-right
-      { scale: 1.2, x: '0%', y: '75%' },  // Bottom-left
-      { scale: 1.2, x: '50%', y: '50%' }  // Center
-    ];
-  
-    let currentStep = 0; // Start at the first step
-    const stepDuration = 6000; // Duration per step (in ms)
-  
-    function animate() {
-      const { scale, x, y } = animationSteps[currentStep];
-  
-      // Apply styles for the current step
-tigerImage.style.transform = `scale(${scale})`;
-tigerImage.style.objectPosition = `${x} ${y}`;  // Supondo que 'x' e 'y' sejam valores em porcentagem
+  // Efeito de deslizamento da Tiger Image
+  const tigerImage = document.querySelector('.tiger-image');
+  const animationSteps = [{ x: '0%', y: '0%' }, { x: '75%', y: '0%' }, { x: '75%', y: '75%' }, { x: '0%', y: '75%' }];
+  let currentStep = 0;
 
-  
-      // Move to the next step, looping back to the start
-      currentStep = (currentStep + 1) % animationSteps.length;
-  
-      // Schedule the next animation step
-      setTimeout(animate, stepDuration);
+  function animateImage() {
+    const { x, y } = animationSteps[currentStep];
+    tigerImage.style.objectPosition = `${x} ${y}`;
+    currentStep = (currentStep + 1) % animationSteps.length;
+    setTimeout(animateImage, 6000);
+  }
+  animateImage();
+
+  // Lógica do formulário multi-step
+  const steps = document.querySelectorAll('.step');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
+  const progressBar = document.querySelector('.progress');
+  let currentStepIndex = 0;
+
+  function updateForm() {
+    steps.forEach((step, index) => step.classList.toggle('active', index === currentStepIndex));
+    progressBar.style.width = `${((currentStepIndex + 1) / steps.length) * 100}%`;
+  }
+
+  nextBtn.addEventListener('click', () => {
+    if (currentStepIndex < steps.length - 1) {
+      currentStepIndex++;
+      updateForm();
     }
-  
-    // Start the animation loop
-    animate();
   });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentStepIndex > 0) {
+      currentStepIndex--;
+      updateForm();
+    }
+  });
+
+  document.getElementById('create-account-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    alert('Conta criada com sucesso!');
+    window.location.href = './../login/index.html';
+  });
+
+  updateForm();
+});

@@ -13,36 +13,31 @@
     </div>
     
     <div class="right-section">
-
-
-      <h1>Seja um profissional cadastrado na ANTIBET</h1>
+      <h1>Seja um profissional cadastrado na <span class="highlight">ANTIBET</span></h1>
       <p>Ajude outras pessoas a apostar na vida!</p>
 
-      <div class="etapa1">
-        <form id="create-account-form">
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+
+      <form id="create-account-form">
+        <div class="step active">
           <label for="full-name">Nome completo</label>
           <input type="text" id="full-name" name="full-name" placeholder="Insira o seu nome completo" required>
           
           <label for="email">Endereço de e-mail</label>
           <input type="email" id="email" placeholder="Insira o seu endereço de e-mail" required aria-label="E-mail">
-        </form>
         </div>  
 
-        <div class="etapa2">
-          <form>
-            <label for="crm">Informe o número do CRM ou CRP</label>
-            <input type="number" id="crm" placeholder="Insira o seu número do CRM ou CRP" required aria-label="crm">
+        <div class="step">
+          <label for="crm">Informe o número do CRM ou CRP</label>
+          <input type="number" id="crm" placeholder="Insira o seu número do CRM ou CRP" required aria-label="crm">
 
-            <label for="phone">Número de telefone</label>
-            <input type="tel" id="phone" placeholder="Insira o seu telefone" required pattern="\d+" aria-label="Telefone">
-  
-          </form>
+          <label for="phone">Número de telefone</label>
+          <input type="tel" id="phone" placeholder="Insira o seu telefone" required pattern="\d+" aria-label="Telefone">
         </div>
 
-
-        
-        <div class="etapa3">
-        <form>
+        <div class="step">
           <label for="password">Crie uma senha</label>
           <input type="password" id="password" name="password" placeholder="Insira a sua senha" required>
           
@@ -50,13 +45,13 @@
           <input type="password" id="password-confirm" name="password-confirm" placeholder="Insira a sua senha" required>
 
           <button type="submit" class="create-account-btn">Criar conta</button>
-          <button type="button" class="google-signup-btn">
-            <img src="./../assets/google-icon.png" alt="Google Icon">
-            Entre com sua conta do Google
-          </button>
-        </form>
         </div>
-      </div>
+
+        <div class="form-navigation">
+          <button type="button" class="prev-btn">Voltar</button>
+          <button type="button" class="next-btn">Avançar</button>
+        </div>
+      </form>
 
       <p>Já possui uma conta? <a href="./../login/index.html">Acesse a sua conta!</a></p>
     </div>

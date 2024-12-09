@@ -1,111 +1,109 @@
+/* Reset */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: radial-gradient(circle, #FFD700 20%, #FF8C00 60%, #FF4500 100%);
-  }
-  
-  .container {
-    display: flex;
-    max-width: 800px;
-    width: 100%;
-    background: #fff;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
-    border-radius: 8px;
-    border: 1px solid #00000041;
-    overflow: hidden;
-  }
-  
-  .left-section {
-    flex: 1;
-    background: #ffcc00;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .tiger-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: 0% 0%;
-    transition: transform 6s linear, object-position 6s linear;
-  }
-  
-  .right-section {
-    flex: 1;
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  
-  h1 {
-    margin-bottom: 0;
-  }
-  
-  p {
-    margin-bottom: 20px;
-    color: #666;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input {
-    margin-bottom: 20px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  .create-account-btn {
-    background: #000;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .google-signup-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background: #fff;
-    cursor: pointer;
-  }
-  
-  .google-signup-btn img {
-    margin-right: 10px;
-    max-width: 20%;
-    max-height: 20%;
-    object-fit: cover;
-  }
-  
-  a {
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(circle, #FFD700 20%, #FF8C00 60%, #FF4500 100%);
+}
+
+.container {
+  display: flex;
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.left-section {
+  flex: 1;
+  background: #ffcc00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.tiger-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 6s linear, object-position 6s linear;
+}
+
+.right-section {
+  flex: 1;
+  padding: 40px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.highlight {
+  color: #FF8C00;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.progress-bar {
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  background: #FF8C00;
+  border-radius: 5px;
+}
+
+.form-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.next-btn, .prev-btn {
+  background: #FF8C00;
+  color: white;
+}
+
+.create-account-btn {
+  background: #000;
+  color: white;
+}
+
+a {
+  color: #000;
+  font-weight: bold;
+}
