@@ -1,3 +1,12 @@
+// Quero Ajudar redirecionador
+document.addEventListener("DOMContentLoaded", () => {
+    const queroAjudar = document.getElementById("queroAjudar");
+
+    queroAjudar.addEventListener("click", () => {
+        window.location.href = "./../cadastro-profissional/index.html";
+    });
+});
+
 // Toggle sidebar visibility on mobile
 const menuToggle = document.getElementById('menuToggle');
 const sidebar = document.getElementById('sidebar');
