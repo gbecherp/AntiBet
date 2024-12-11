@@ -15,7 +15,9 @@ body {
   max-width: 800px;
   width: 100%;
   background: #fff;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.5);
   border-radius: 8px;
+  border: 2px solid #00000041;
   overflow: hidden;
 }
 
@@ -25,8 +27,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  overflow: hidden;
 }
 
 .tiger-image {
@@ -39,10 +39,18 @@ body {
 .right-section {
   flex: 1;
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1 {
   margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 20px;
+  color: #666;
 }
 
 .highlight {
@@ -52,22 +60,36 @@ h1 {
 form {
   display: flex;
   flex-direction: column;
+  gap: 15px; /* Adds consistent spacing between fields */
+  height: 300px;
+  overflow: hidden;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 input {
-  margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ddd;
   border-radius: 4px;
+  width: 100%; /* Ensures inputs take the full width of the form container */
+  box-sizing: border-box;
 }
+
+.step.active {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Adds consistent spacing between fields */
+}
+
 
 .step {
   display: none;
 }
 
-.step.active {
-  display: block;
-}
+
 
 .progress-bar {
   height: 10px;
